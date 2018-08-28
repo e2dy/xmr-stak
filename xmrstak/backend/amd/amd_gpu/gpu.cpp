@@ -54,13 +54,13 @@ static inline void create_directory(std::string dirname)
 
 static inline std::string get_home()
 {
-	char path[MAX_PATH + 1];
+	//char path[MAX_PATH + 1];
 	// get folder "appdata\local"
-	if (SHGetSpecialFolderPathA(HWND_DESKTOP, path, CSIDL_LOCAL_APPDATA, FALSE))
-	{
-		return path;
-	}
-	else
+	//if (SHGetSpecialFolderPathA(HWND_DESKTOP, path, CSIDL_LOCAL_APPDATA, FALSE))
+	//{
+	//	return path;
+	//}
+	//else
 		return ".";
 }
 
